@@ -23,27 +23,27 @@ Retail trading platforms often expose individual investors to emotional pitfalls
 
 <div align="center">
 
-### 1. Practice & Simulated Order Execution
-![Practice Tab](docs/screenshots/01-practice.jpeg)
-*Interactive simulated execution terminal featuring multi-asset quotes (`NIFTY 50`, `BANKNIFTY`, `RELIANCE`), live leverage selectors, trade motivation tags, and immediate risk score feedback.*
+### 1. Security PIN Gate & Client-Side Vault Authentication
+![Security PIN Gate](docs/screenshots/01-vault-gate.jpeg)
+*Secure master entry screen where all local trading journals and safety states are protected with on-device PIN authentication (PBKDF2 150,000 iterations + AES-GCM 256-bit). Features zero-telemetry indicator and quick-demo scenario access.*
 
 ---
 
-### 2. Deterministic Safety Lock & Cooldown Timer
-![Safety Lock Screen](docs/screenshots/02-lock.jpeg)
-*Automated behavioral circuit breaker activating a mandatory cooldown pause when risk scores exceed safety thresholds (`score >= 2`), requiring mindful breathing and reflection.*
+### 2. Deterministic Circuit-Breaker Lockout & 51s Cooldown Timer
+![Safety Lock Screen](docs/screenshots/02-lock-modal.jpeg)
+*Behavioral safety circuit-breaker activated upon detecting high-risk patterns (3 consecutive losses, 10x over-leverage, and social tip motivation). Imposes a mandatory 51-second mindful pause with speech-to-text / audio reflection input before allowing order retry.*
 
 ---
 
-### 3. Encrypted Reflection Journal
-![Encrypted Journal](docs/screenshots/03-journal.jpeg)
-*Client-side encrypted trade reflections secured using PBKDF2 (150,000 rounds) and AES-GCM 256-bit encryption. Traders document emotional triggers and motivations locally.*
+### 3. Practice Trading Terminal & Real-Time Risk Monitor
+![Practice Terminal](docs/screenshots/03-practice-terminal.jpeg)
+*Simulated market workspace featuring a ₹50,000 capital guard, multi-asset order routing (NIFTY 50, BANKNIFTY), leverage slider (1x to 20x), trade source & motivation taggers, and a live feed of recent trades with P&L calculation.*
 
 ---
 
-### 4. Zero-Knowledge Trust & Network Audit
-![Trust & Firewall Tab](docs/screenshots/04-trust.jpeg)
-*Built-in live network auditor verifying that exactly 0 external or telemetry requests leave the device, alongside dataset import and vault management tools.*
+### 4. Decision Journal & Behavioral Reflection History
+![Decision Journal](docs/screenshots/04-decision-journal.jpeg)
+*Encrypted historical reflection log tracking trade reasons, time horizons, and circuit-breaker pause reflections (e.g., "Reflected and chose to step back from impulsive trade"). Includes a dedicated filter to audit circuit-breaker events.*
 
 </div>
 
@@ -129,10 +129,10 @@ SANKALP evaluates orders against historical state using deterministic safety che
 Sankalp-track4/
 ├── docs/                                # Documentation & media assets
 │   └── screenshots/                     # Verified application screenshots
-│       ├── 01-practice.jpeg             # Practice execution screen
-│       ├── 02-lock.jpeg                 # Safety lockout modal
-│       ├── 03-journal.jpeg              # Encrypted reflection journal
-│       └── 04-trust.jpeg                # Zero-knowledge network trust tab
+│       ├── 01-vault-gate.jpeg           # Security PIN gate & vault login
+│       ├── 02-lock-modal.jpeg           # Circuit-breaker lockout & cooldown modal
+│       ├── 03-practice-terminal.jpeg    # Practice trading terminal & order entry
+│       └── 04-decision-journal.jpeg     # Decision journal & reflection history
 │
 ├── public/                              # Static public assets (zero external requests)
 │   ├── config/
