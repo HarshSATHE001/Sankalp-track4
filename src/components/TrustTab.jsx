@@ -61,7 +61,7 @@ export default function TrustTab({
               onChange={setBhashiniTts}
               disabled={true}
               label={t(L.bhashiniTtsLabel, lang)}
-              sublabel="Offline pre-recorded Hindi & Marathi phrases (Enabled in Phase 4)"
+              sublabel="Offline pre-recorded Hindi & Marathi voice alerts"
             />
 
             <Toggle

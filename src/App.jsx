@@ -34,7 +34,7 @@ export default function App() {
   const [bhashiniTts, setBhashiniTts] = useState(false);
   const [voiceInput, setVoiceInput] = useState(true);
 
-  // Phase 0: Boot-time merge of thresholds.json with clamping
+  // Boot-time merge of thresholds.json with clamping
   useEffect(() => {
     getStatic('config/thresholds.json')
       .then((cfg) => {
@@ -50,12 +50,12 @@ export default function App() {
         }
       })
       .catch((err) => {
-        // Range clamping / ignore on failure as per spec
+        // Range clamping on threshold configuration
         console.warn('Thresholds config load skipped:', err.message);
       });
   }, []);
 
-  // Phase 0: Network counters & firewall monitoring
+  // Network counters & firewall monitoring
   useEffect(() => {
     const unsub = subscribeCounters(setReqN);
 
