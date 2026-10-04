@@ -1,0 +1,31 @@
+{
+  "version": "2.0.0",
+  "reviewedBy": null,
+  "seed": 42,
+  "presets": {
+    "default": {
+      "name": "Default SEBI Investor Resilience Baseline",
+      "streak": 3,
+      "maxLev": 10,
+      "cool": 60,
+      "lateNight": [23, 5],
+      "sizeZ": 2.0
+    },
+    "strict": {
+      "name": "Conservative High-Friction Shield",
+      "streak": 2,
+      "maxLev": 5,
+      "cool": 120,
+      "lateNight": [22, 6],
+      "sizeZ": 1.5
+    },
+    "relaxed": {
+      "name": "Experienced Investor Mode",
+      "streak": 4,
+      "maxLev": 15,
+      "cool": 30,
+      "lateNight": [23, 5],
+      "sizeZ": 2.5
+    }
+  }
+}
