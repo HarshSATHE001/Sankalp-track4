@@ -10,7 +10,8 @@
 [![PWA](https://img.shields.io/badge/PWA-Offline%20Ready-0891b2)](README.md)
 
 ---
-
+🔗 **Live Demo:** [https://sankalp-track4.vercel.app/](https://sankalp-track4.vercel.app/)
+---
 ## 📌 Executive Summary
 
 Retail trading platforms often expose individual investors to emotional pitfalls such as **revenge trading after consecutive losses**, **sudden leverage spikes**, **late-night impulse execution**, and **FOMO chasing**. 
